@@ -14,9 +14,9 @@ nvcc --version
 make sure in your .bashrc file the path and library for cuda is set 
 
 
-export PATH="/home/weheliye@cscdom.csc.mrc.ac.uk/usr/local/cuda-11.4/bin:$PATH"
+export PATH="$HOME/usr/local/cuda-11.4/bin:$PATH"
 
-export LD_LIBRARY_PATH="/home/weheliye@cscdom.csc.mrc.ac.uk/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$HOME/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH"
 
 ## Installation
 
