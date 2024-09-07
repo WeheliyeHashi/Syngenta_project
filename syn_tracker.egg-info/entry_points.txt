@@ -1,0 +1,2 @@
+[console_scripts]
+process_data = syn_tracker.main_process:main

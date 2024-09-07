@@ -1,0 +1,466 @@
+{
+    "data": {
+        "labels": {
+            "training_labels": "/home/weheliye@cscdom.csc.mrc.ac.uk/behavgenom_mnt/Weheliye/Syngenta_project/Project/Final_model/final_model.slp",
+            "validation_labels": null,
+            "validation_fraction": 0.05,
+            "test_labels": null,
+            "split_by_inds": false,
+            "training_inds": [
+                34,
+                157,
+                102,
+                123,
+                99,
+                20,
+                10,
+                111,
+                73,
+                52,
+                74,
+                43,
+                5,
+                45,
+                75,
+                143,
+                130,
+                127,
+                23,
+                138,
+                144,
+                50,
+                60,
+                84,
+                108,
+                22,
+                57,
+                16,
+                65,
+                116,
+                38,
+                135,
+                78,
+                118,
+                119,
+                154,
+                32,
+                1,
+                3,
+                124,
+                91,
+                83,
+                17,
+                152,
+                79,
+                96,
+                9,
+                56,
+                7,
+                63,
+                33,
+                150,
+                115,
+                40,
+                117,
+                92,
+                69,
+                41,
+                59,
+                14,
+                136,
+                93,
+                103,
+                101,
+                21,
+                125,
+                121,
+                151,
+                122,
+                30,
+                31,
+                137,
+                132,
+                29,
+                105,
+                77,
+                39,
+                37,
+                19,
+                28,
+                95,
+                131,
+                104,
+                66,
+                90,
+                8,
+                156,
+                48,
+                55,
+                100,
+                49,
+                0,
+                12,
+                112,
+                58,
+                64,
+                68,
+                128,
+                85,
+                80,
+                88,
+                42,
+                76,
+                114,
+                71,
+                94,
+                24,
+                107,
+                146,
+                46,
+                11,
+                2,
+                82,
+                53,
+                6,
+                18,
+                142,
+                81,
+                133,
+                44,
+                141,
+                26,
+                106,
+                140,
+                147,
+                148,
+                149,
+                109,
+                35,
+                15,
+                86,
+                113,
+                47,
+                62,
+                139,
+                110,
+                134,
+                158,
+                126,
+                97,
+                61,
+                70,
+                72,
+                25,
+                87,
+                155,
+                4,
+                54,
+                98,
+                27,
+                36,
+                129
+            ],
+            "validation_inds": [
+                159,
+                13,
+                51,
+                120,
+                67,
+                145,
+                153,
+                89
+            ],
+            "test_inds": null,
+            "search_path_hints": [
+                "",
+                ""
+            ],
+            "skeletons": [
+                {
+                    "directed": true,
+                    "graph": {
+                        "name": "pose",
+                        "num_edges_inserted": 4
+                    },
+                    "links": [
+                        {
+                            "edge_insert_idx": 0,
+                            "key": 0,
+                            "source": {
+                                "py/object": "sleap.skeleton.Node",
+                                "py/state": {
+                                    "py/tuple": [
+                                        "head",
+                                        1.0
+                                    ]
+                                }
+                            },
+                            "target": {
+                                "py/object": "sleap.skeleton.Node",
+                                "py/state": {
+                                    "py/tuple": [
+                                        "thorax",
+                                        1.0
+                                    ]
+                                }
+                            },
+                            "type": {
+                                "py/reduce": [
+                                    {
+                                        "py/type": "sleap.skeleton.EdgeType"
+                                    },
+                                    {
+                                        "py/tuple": [
+                                            1
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "edge_insert_idx": 1,
+                            "key": 0,
+                            "source": {
+                                "py/object": "sleap.skeleton.Node",
+                                "py/state": {
+                                    "py/tuple": [
+                                        "abdomen",
+                                        1.0
+                                    ]
+                                }
+                            },
+                            "target": {
+                                "py/id": 2
+                            },
+                            "type": {
+                                "py/id": 3
+                            }
+                        },
+                        {
+                            "edge_insert_idx": 2,
+                            "key": 0,
+                            "source": {
+                                "py/object": "sleap.skeleton.Node",
+                                "py/state": {
+                                    "py/tuple": [
+                                        "wingL",
+                                        1.0
+                                    ]
+                                }
+                            },
+                            "target": {
+                                "py/id": 2
+                            },
+                            "type": {
+                                "py/id": 3
+                            }
+                        },
+                        {
+                            "edge_insert_idx": 3,
+                            "key": 0,
+                            "source": {
+                                "py/object": "sleap.skeleton.Node",
+                                "py/state": {
+                                    "py/tuple": [
+                                        "wingR",
+                                        1.0
+                                    ]
+                                }
+                            },
+                            "target": {
+                                "py/id": 2
+                            },
+                            "type": {
+                                "py/id": 3
+                            }
+                        }
+                    ],
+                    "multigraph": true,
+                    "nodes": [
+                        {
+                            "id": {
+                                "py/id": 1
+                            }
+                        },
+                        {
+                            "id": {
+                                "py/id": 2
+                            }
+                        },
+                        {
+                            "id": {
+                                "py/id": 4
+                            }
+                        },
+                        {
+                            "id": {
+                                "py/id": 5
+                            }
+                        },
+                        {
+                            "id": {
+                                "py/id": 6
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "preprocessing": {
+            "ensure_rgb": false,
+            "ensure_grayscale": false,
+            "imagenet_mode": null,
+            "input_scaling": 1.0,
+            "pad_to_stride": 1,
+            "resize_and_pad_to_target": true,
+            "target_height": 1800,
+            "target_width": 1800
+        },
+        "instance_cropping": {
+            "center_on_part": "thorax",
+            "crop_size": 384,
+            "crop_size_detection_padding": 16
+        }
+    },
+    "model": {
+        "backbone": {
+            "leap": null,
+            "unet": {
+                "stem_stride": null,
+                "max_stride": 16,
+                "output_stride": 2,
+                "filters": 24,
+                "filters_rate": 2.0,
+                "middle_block": true,
+                "up_interpolate": true,
+                "stacks": 1
+            },
+            "hourglass": null,
+            "resnet": null,
+            "pretrained_encoder": null
+        },
+        "heads": {
+            "single_instance": null,
+            "centroid": null,
+            "centered_instance": {
+                "anchor_part": "thorax",
+                "part_names": [
+                    "head",
+                    "thorax",
+                    "abdomen",
+                    "wingL",
+                    "wingR"
+                ],
+                "sigma": 2.5,
+                "output_stride": 2,
+                "loss_weight": 1.0,
+                "offset_refinement": false
+            },
+            "multi_instance": null,
+            "multi_class_bottomup": null,
+            "multi_class_topdown": null
+        },
+        "base_checkpoint": null
+    },
+    "optimization": {
+        "preload_data": true,
+        "augmentation_config": {
+            "rotate": true,
+            "rotation_min_angle": -180.0,
+            "rotation_max_angle": 180.0,
+            "translate": false,
+            "translate_min": -5,
+            "translate_max": 5,
+            "scale": false,
+            "scale_min": 0.9,
+            "scale_max": 1.1,
+            "uniform_noise": false,
+            "uniform_noise_min_val": 0.0,
+            "uniform_noise_max_val": 10.0,
+            "gaussian_noise": false,
+            "gaussian_noise_mean": 5.0,
+            "gaussian_noise_stddev": 1.0,
+            "contrast": false,
+            "contrast_min_gamma": 0.5,
+            "contrast_max_gamma": 2.0,
+            "brightness": false,
+            "brightness_min_val": 0.0,
+            "brightness_max_val": 10.0,
+            "random_crop": false,
+            "random_crop_height": 256,
+            "random_crop_width": 256,
+            "random_flip": false,
+            "flip_horizontal": false
+        },
+        "online_shuffling": true,
+        "shuffle_buffer_size": 128,
+        "prefetch": true,
+        "batch_size": 4,
+        "batches_per_epoch": 269,
+        "min_batches_per_epoch": 200,
+        "val_batches_per_epoch": 14,
+        "min_val_batches_per_epoch": 10,
+        "epochs": 250,
+        "optimizer": "adam",
+        "initial_learning_rate": 0.0001,
+        "learning_rate_schedule": {
+            "reduce_on_plateau": true,
+            "reduction_factor": 0.5,
+            "plateau_min_delta": 1e-06,
+            "plateau_patience": 5,
+            "plateau_cooldown": 3,
+            "min_learning_rate": 1e-08
+        },
+        "hard_keypoint_mining": {
+            "online_mining": false,
+            "hard_to_easy_ratio": 2.0,
+            "min_hard_keypoints": 2,
+            "max_hard_keypoints": null,
+            "loss_scale": 5.0
+        },
+        "early_stopping": {
+            "stop_training_on_plateau": true,
+            "plateau_min_delta": 1e-08,
+            "plateau_patience": 20
+        }
+    },
+    "outputs": {
+        "save_outputs": true,
+        "run_name": "240903_174724.centered_instance.n=160",
+        "run_name_prefix": "",
+        "run_name_suffix": "",
+        "runs_folder": "/home/weheliye@cscdom.csc.mrc.ac.uk/behavgenom_mnt/Weheliye/Syngenta_project/Project/Final_model/models",
+        "tags": [
+            ""
+        ],
+        "save_visualizations": true,
+        "delete_viz_images": true,
+        "zip_outputs": false,
+        "log_to_csv": true,
+        "checkpointing": {
+            "initial_model": false,
+            "best_model": true,
+            "every_epoch": false,
+            "latest_model": false,
+            "final_model": false
+        },
+        "tensorboard": {
+            "write_logs": false,
+            "loss_frequency": "epoch",
+            "architecture_graph": false,
+            "profile_graph": false,
+            "visualizations": true
+        },
+        "zmq": {
+            "subscribe_to_controller": true,
+            "controller_address": "tcp://127.0.0.1:9000",
+            "controller_polling_timeout": 10,
+            "publish_updates": true,
+            "publish_address": "tcp://127.0.0.1:9001"
+        }
+    },
+    "name": "",
+    "description": "",
+    "sleap_version": "1.3.3",
+    "filename": "/home/weheliye@cscdom.csc.mrc.ac.uk/behavgenom_mnt/Weheliye/Syngenta_project/Project/Final_model/models/240903_174724.centered_instance.n=160/training_config.json"
+}

@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+syn_tracker/__init__.py
+syn_tracker/main_process.py
+syn_tracker.egg-info/PKG-INFO
+syn_tracker.egg-info/SOURCES.txt
+syn_tracker.egg-info/dependency_links.txt
+syn_tracker.egg-info/entry_points.txt
+syn_tracker.egg-info/not-zip-safe
+syn_tracker.egg-info/top_level.txt
