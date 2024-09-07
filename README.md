@@ -2,14 +2,21 @@
 This is a code for syngenta. 
 
 
-##Cuda installation check 
+## Cuda installation check 
 Make sure a cuda 11.* is installed in your computer. 
 
-To check which version of cuda you have simply type the follwoing on a terminal 
+To check which version of cuda you have simply type the following on a terminal 
 
 ```bash
 nvcc --version
 ```
+
+make sure in your .bashrc file the path and library for cuda is set 
+
+
+export PATH="/home/weheliye@cscdom.csc.mrc.ac.uk/usr/local/cuda-11.4/bin:$PATH"
+
+export LD_LIBRARY_PATH="/home/weheliye@cscdom.csc.mrc.ac.uk/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH"
 
 ## Installation
 
