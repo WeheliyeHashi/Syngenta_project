@@ -11,13 +11,12 @@ To check which version of cuda you have simply type the following on a terminal
 nvcc --version
 ```
 
-make sure in your .bashrc file the path and library for cuda is set 
+Ensure that the path and library for CUDA are set in your .bashrc file:
 
-
+```bash
 export PATH="$HOME/usr/local/cuda-11.4/bin:$PATH"
-
 export LD_LIBRARY_PATH="$HOME/usr/local/cuda-11.4/lib64:$LD_LIBRARY_PATH"
-
+```
 ## Installation
 
 Installation steps:
@@ -35,14 +34,17 @@ pip install -e .
 
 ## Starting the program
 
-Now that the code is installed, you can check if installation was done correctly by typing this on the terminal
-`process_data --help` in your terminal window (provided the `DrosP_code`
-environment is active)
+Now that the code is installed, you can check if the installation was successful by typing the following in the terminal:
 
+```bash
+process_data --help
+```
+Make sure the DrosP_code environment is active.
 
 ### Updating an existing installation
 
-Assuming that this code was cloned or donwloaded to desktop and that the `Worm_annotation` environment has already been created, you can update the code by executing
+Assuming that this code was cloned or downloaded to the desktop and that the DrosP_code environment has already been created, you can update the code by executing:
+
 ```bash
 cd ~/Syngenta_project
 conda activate DrosP_code
@@ -50,18 +52,31 @@ git pull
 pip install -e .
 ```
 
+## Project layout
 
+Your project layout should look like this: It should include the RawVideos folder along with the Auxiliary file. An example of the metadata is also provided.
 
+```
+└── 📁Project_1
+    └── 📁AuxiliaryFiles
+        └── 📁CTRL - untreated
+            └── 📁time 0h
+                └── metadata_source.xlsx
+           
+    └── 📁RawVideos
+        └── 📁CTRL - untreated
+            └── 📁time 0h
+```
 
-your_project/
-│
-├── RawVideos/
-│   ├── compound_1
-│   └── compound_2
-│
-└── AuxiliaryFiles/
-    ├── compound_1 ── metadata_file.xls
-    └── compound_2 ── metadata_file.xls
+## Processing data
 
+Finally to process your data simply open a terminal:
 
+```bash
+
+conda activate DrosP_code
+process_data --rw_path "path to your rawvideos folder"
+```
+
+This will create two new folders: one for each video containing results, and another for feature summaries and figures, which include boxplots and a clustermap for your data.
 
