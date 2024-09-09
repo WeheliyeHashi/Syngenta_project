@@ -99,14 +99,14 @@ def smooth_diff(node_loc, win=25, poly=3):
 
 
 def instance_node_velocities(instance_idx, locations, frame_count, node_count):
-    velocity_threshold = 0.01
+    velocity_threshold = 0.02
     fly_node_locations = locations[:, :, :, instance_idx]
     fly_node_velocities = np.zeros((frame_count, node_count))
     fly_node_angular_velocities = np.zeros((frame_count, node_count))
 
     for n in range(0, node_count):
         fly_node_velocities[:, n] = smooth_diff(fly_node_locations[:, n, :])
-        avg_velocity = np.nanmean(fly_node_velocities[:, n])
+        avg_velocity = np.nanmedian(fly_node_velocities[:, n])
         # print(avg_velocity)
         if avg_velocity < velocity_threshold:  # Fly is classified as dead
             fly_node_angular_velocities[:, n] = 0
